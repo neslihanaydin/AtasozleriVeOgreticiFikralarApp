@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/genelback"
+    tools:context=".FikraGosterActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/fikraview"
+        android:layout_width="wrap_content"
+        android:layout_height="169dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/atasozu2" />
+
+    <EditText
+        android:id="@+id/fikratext"
+        android:layout_width="312dp"
+        android:layout_height="226dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="none"
+        android:singleLine="false"
+        android:text="zaza balbaldbnkdalvbadzaza balbaldbnkdalvbadzaza balbaldbnkdalvbadzaza balbaldbnkdalvbadzaza balbaldbnkdalvbadzaza balbaldbnkdalvbadzaza balbaldbnkdalvbadzaza balbaldbnkdalvbadzaza balbaldbnkdalzaza balbaldbnkdalvbadzaza balbaldbnkdalvbadzaza balbaldbnkdalvbadzaza balbaldbnkdalvbadzaza balbaldbnkdalvbadzaza balbaldbnkdalvbadvbad"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/listeyedonbuton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fikraview" />
+
+    <Button
+        android:id="@+id/geributon"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/holo_orange_light"
+        android:fontFamily="casual"
+        android:onClick="geriDon"
+        android:text="Geri"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/listeyedonbuton"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/listeyedonbuton"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/holo_orange_light"
+        android:fontFamily="casual"
+        android:onClick="listeyeDon"
+        android:text=" Listeye dön "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ileributon"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ileributon"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="36dp"
+        android:background="@android:color/holo_orange_light"
+        android:fontFamily="casual"
+        android:onClick="ileriGit"
+        android:text="İleri"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

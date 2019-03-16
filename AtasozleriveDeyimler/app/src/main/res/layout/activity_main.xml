@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wallpaper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kapak2"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/btnBegin"
+        android:layout_width="217dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="111dp"
+        android:background="@drawable/buttonorange"
+        android:backgroundTint="#ffde5b"
+        android:elevation="0dp"
+        android:fontFamily="@font/coiny"
+        android:onClick="appBegin"
+        android:text="  Atasözleri  "
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnFikra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSinav"
+        android:layout_width="217dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="195dp"
+        android:background="@drawable/buttonorange"
+        android:backgroundTint="#ffde5b"
+        android:fontFamily="@font/coiny"
+        android:onClick="testEt"
+        android:text="Kendini Test Et"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFikra" />
+
+    <Button
+        android:id="@+id/btnFikra"
+        android:layout_width="217dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/buttonorange"
+        android:backgroundTint="#ffde5b"
+        android:fontFamily="@font/coiny"
+        android:onClick="fikraBegin"
+        android:text="Öğretici Fıkralar"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSinav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBegin" />
+</android.support.constraint.ConstraintLayout>

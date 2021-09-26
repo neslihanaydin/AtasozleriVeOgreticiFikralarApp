@@ -28,15 +28,15 @@ public class Main2Activity extends AppCompatActivity {
         indexyerel = intent.getIntExtra("index",-1);
         goster(indexyerel);
     }
-    void gerile(View view){
+    public void gerile(View view){
         sayac = sayac - 1;
         ilerigerigoster(sayac);
     }
-    void ilerle(View view){
+    public void ilerle(View view){
         sayac = sayac+1;
         ilerigerigoster(sayac);
     }
-    void ilerigerigoster(int sayac){
+    public void ilerigerigoster(int sayac){
         if(sayac < 0){
             Main2Activity.sayac = 0;
             Toast.makeText(getApplicationContext(),"Bu ilk atasözüdür",Toast.LENGTH_SHORT).show();
@@ -72,13 +72,13 @@ public class Main2Activity extends AppCompatActivity {
         }
     }
 
-    void listeyeDon(View view){
+    public void listeyeDon(View view){
 
         Intent intent = new Intent(getApplicationContext(),FeedActivity.class);
         startActivity(intent);
         finish();
     }
-    void goster(int index){
+    public void goster(int index){
         if(index == 0){
             sayac = 0;
             imageView.setImageResource(R.drawable.d1);

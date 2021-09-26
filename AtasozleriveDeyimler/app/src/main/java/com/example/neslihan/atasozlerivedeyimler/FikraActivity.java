@@ -40,7 +40,7 @@ public class FikraActivity extends AppCompatActivity {
             }
         });
     }
-    void backtomain(View view){
+    public void backtomain(View view){
         MainActivity.ply.stop();
         Intent intent = new Intent(getApplicationContext(),MainActivity.class);
         startActivity(intent);

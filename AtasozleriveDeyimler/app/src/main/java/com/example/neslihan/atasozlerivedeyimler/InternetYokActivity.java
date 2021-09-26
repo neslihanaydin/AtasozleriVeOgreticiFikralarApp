@@ -12,7 +12,7 @@ public class InternetYokActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_internet_yok);
     }
-    void geriDon(View view){
+    public void geriDon(View view){
         Intent intent = new Intent(getApplicationContext(),MainActivity.class);
         startActivity(intent);
     }

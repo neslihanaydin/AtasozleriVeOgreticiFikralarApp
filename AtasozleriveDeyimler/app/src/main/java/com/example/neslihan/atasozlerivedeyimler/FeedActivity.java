@@ -55,7 +55,7 @@ public class FeedActivity extends AppCompatActivity {
         });
 
     }
-    void backToMain(View view){
+    public void backToMain(View view){
         MainActivity.ply.stop();
         Intent intent = new Intent(getApplicationContext(),MainActivity.class);
         startActivity(intent);

@@ -15,19 +15,15 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     public static MediaPlayer ply;
-    Button button ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ply = MediaPlayer.create(MainActivity.this,R.raw.kids1);
 
-
-
-
     }
 
-    void appBegin(View view){
+    public void appBegin(View view){
         BaslangicActivity.ply.stop();
         ply.start();
         Intent intent = new Intent(getApplicationContext(),FeedActivity.class);
@@ -36,13 +32,15 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-    void fikraBegin(View view){
+    public void fikraBegin(View view){
         BaslangicActivity.ply.stop();
         Intent intent = new Intent(getApplicationContext(),FikraActivity.class);
         startActivity(intent);
         finish();
     }
-    void testEt(View view){
+
+
+    public void testEt(View view) {
         BaslangicActivity.ply.stop();
         Intent intent = new Intent(getApplicationContext(),TestActivity.class);
         startActivity(intent);

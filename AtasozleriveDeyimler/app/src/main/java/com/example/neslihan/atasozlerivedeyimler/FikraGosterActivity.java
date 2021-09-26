@@ -34,7 +34,7 @@ public class FikraGosterActivity extends AppCompatActivity {
         indexFikra = intent.getIntExtra("index",-1);
         goster(indexFikra);
     }
-    void goster(int index){
+    public void goster(int index){
         if(index == 0){
             sayac = 0;
             imageView.setImageResource(R.drawable.fikra1);
@@ -89,22 +89,22 @@ public class FikraGosterActivity extends AppCompatActivity {
             imageView.setImageResource(R.drawable.internetyok);
         }
     }
-    void ileriGit(View view){
+    public void ileriGit(View view){
         sayac = sayac+1;
         ilerigerigoster(sayac);
 
     }
-    void geriDon(View view){
+    public void geriDon(View view){
         sayac = sayac - 1;
         ilerigerigoster(sayac);
 
     }
-    void listeyeDon(View view){
+    public void listeyeDon(View view){
         Intent intent = new Intent(getApplicationContext(),FikraActivity.class);
         startActivity(intent);
         finish();
     }
-    void ilerigerigoster(int sayac){
+    public void ilerigerigoster(int sayac){
         if(sayac < 0){
             FikraGosterActivity.sayac = 0;
             Toast.makeText(getApplicationContext(),"Bu ilk fikradir.",Toast.LENGTH_SHORT).show();

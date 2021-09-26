@@ -35,7 +35,7 @@ public class SonucActivity extends AppCompatActivity {
         timer();
 
 }
-    void anaMenuDon(View view){
+    public void anaMenuDon(View view){
 
         Intent intent = new Intent(getApplicationContext(),MainActivity.class);
         startActivity(intent);

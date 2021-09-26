@@ -70,17 +70,17 @@ public class TestActivity extends AppCompatActivity {
             secenekC.setText(testAtasozuList.get(i).getSecenekUc());
         }
     }
-    void butonKilitle(){
+    public void butonKilitle(){
         secenekA.setClickable(false);
         secenekB.setClickable(false);
         secenekC.setClickable(false);
     }
-    void butonAc(){
+    public void butonAc(){
         secenekA.setClickable(true);
         secenekB.setClickable(true);
         secenekC.setClickable(true);
     }
-    void onClickA(View view){
+    public void onClickA(View view){
         if(secenekA.getText() == testAtasozuList.get(soruno).getDogruSecenek()){
             dogruSayisi++;butonKilitle();
         }
@@ -95,7 +95,7 @@ public class TestActivity extends AppCompatActivity {
 
 
     }
-    void onClickB(View view){
+    public void onClickB(View view){
         if(secenekB.getText() == testAtasozuList.get(soruno).getDogruSecenek()){
             dogruSayisi++;butonKilitle();
         }
@@ -109,7 +109,7 @@ public class TestActivity extends AppCompatActivity {
             timer(secenekB,0);
 
     }
-    void onClickC(View view){
+    public void onClickC(View view){
         if(secenekC.getText() == testAtasozuList.get(soruno).getDogruSecenek()){
             dogruSayisi++;butonKilitle();
         }
@@ -125,7 +125,7 @@ public class TestActivity extends AppCompatActivity {
 
 
     }
-    void timer(final Button secenek, final int isTrue){
+    public void timer(final Button secenek, final int isTrue){
         new CountDownTimer(1000,500){
             @Override
             public void onTick(long l) {
